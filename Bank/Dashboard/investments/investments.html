@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Summary</title>
+  <link rel="stylesheet" href="investments.css">
+</head>
+<body>
+  <header>
+    <h1>Account Summary</h1>
+    <p>Welcome, <span id="user-name">[User Name]</span></p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../dashboard.html">Dashboard</a></li>
+      <li><a href="../transactions/transactions.html">Transactions</a></li>
+      <li><a href="../funds_transfer/funds_transfer.html">Funds Transfer</a></li>
+      <li><a href="../bill_payments/bill_payments.html">Bill Payments</a></li>
+      <li><a href="../investments/investments.html">Investments</a></li>
+      <li><a href="../profile_and_settings/profile_and_settings.html">Profile & Settings</a></li>
+      <li><a href="#" id="logout">Logout</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="account-summary">
+      <h2>Your Account</h2>
+      <ul>
+        <li>Account Number: <span id="account-number">[Account Number]</span></li>
+        <li>Available Balance: <span id="available-balance">[Available Balance]</span></li>
+        <li id="account-type">Savings Account</li>
+      </ul>
+      <a href="#">View Details</a>
+    </section>
+    <section class="recent-transactions">
+      <h2>Recent Transactions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="transactions-body">
+        </tbody>
+      </table>
+      <a href="#">View All Transactions</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Bank of Innovation</p>
+  </footer>
+  <script src="investments.js"></script>
+</body>
+</html>

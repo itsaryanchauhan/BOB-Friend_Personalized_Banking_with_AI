@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile & Settings</title>
+  <link rel="stylesheet" href="profile_and_settings.css">
+</head>
+<body>
+  <header>
+    <h1>Profile & Settings</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/Bank/Dashboard/account_summary/account_summary.html">Account Summary</a></li>
+      <li><a href="../transactions/transactions.html">Transactions</a></li>
+      <li><a href="../funds_transfer/funds_transfer.html">Funds Transfer</a></li>
+      <li><a href="../bill_payments/bill_payments.html">Bill Payments</a></li>
+      <li><a href="../investments/investments.html">Investments</a></li>
+      <li><a href="../profile_and_settings/profile_and_settings.html">Profile & Settings</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="profile">
+      <h2>Profile</h2>
+      <p>Name: <span id="profile-name"></span></p>
+      <p>Account Number: <span id="profile-account-number"></span></p>
+      <p>Account Type: <span id="profile-account-type"></span></p>
+      <p>Email: <span id="profile-email"></span></p>
+      <p>Address: <span id="profile-address"></span></p>
+      <p>Phone Number: <span id="profile-phone"></span></p>
+      <p>PAN Number: <span id="profile-pan"></span></p>
+      <button id="edit-profile">Edit Profile</button>
+    </section>
+    <section class="settings">
+      <h2>Settings</h2>
+      <button id="logout">Logout</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Bank of Baroda</p>
+  </footer>
+  <script src="profile_and_settings.js"></script>
+</body>
+</html>
